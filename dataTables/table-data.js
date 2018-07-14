@@ -1,4 +1,4 @@
-var tableArray = [
+var data = [
     {
         customerName: "Bobbert",
         customerEmail: "bobbybobby@gmail.com",
@@ -9,4 +9,4 @@ var tableArray = [
 ];
 
 // We export the array. 
-module.exports = tableArray; 
+module.exports = data; 
