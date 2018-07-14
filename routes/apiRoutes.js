@@ -1,7 +1,7 @@
 // This page was coppied directly from starwars class - delete this comment after cleanup
 // Requirements:
 
-var tableData = require('../data/table-data.js');
+var tableData = require('../dataTables/data.js');
 var path = require('path');
 
 module.exports = function (app) {
