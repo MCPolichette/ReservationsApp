@@ -12,6 +12,9 @@ var PORT = process.env.PORT || 3000;
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
+
 
 // Data:
 require("./dataTables/data");
@@ -20,8 +23,8 @@ require("./dataTables/data");
 // =============================================================
 // Routes to other JavaScript files:  
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./routes/apiRoutes.js")(app);
+require("./routes/htmlRoutes.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
